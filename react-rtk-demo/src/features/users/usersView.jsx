@@ -2,6 +2,8 @@ import React from 'react'
 
 export const UserView = () => {
   return (
-    <div>usersView</div>
+    <div className='users-section'>
+      <h2>Users</h2>
+    </div>
   )
 }
