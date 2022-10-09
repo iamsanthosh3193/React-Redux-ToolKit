@@ -19,6 +19,9 @@ export const UserView = () => {
           <div key={user.id}>{user.name}</div>
         )
       ): null}
+      {!users.loading && users.error.length ? (
+        <div>Error while fetching users</div>
+      ) : null}
     </div>
   )
 }
