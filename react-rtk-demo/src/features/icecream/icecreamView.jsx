@@ -12,7 +12,7 @@ export const IcecreamView = () => {
       <div>Available IceCreams: {numberOfIceCreams}</div>
       <div className='flex-row-12 space-evenly'>
         <button onClick={() => {dispatch(ordered())}} className='btn-primary btn-icecream-order'>Order Icecream</button>
-        <button onClick={() => {dispatch(restocked(2))}} className='btn-primary btn-icecream-restock'>Icecream Restock</button>
+        <button onClick={() => {dispatch(restocked(2))}} className='btn-primary btn-icecream-restock'>Restock Icecream</button>
       </div>
     </div>
   )
