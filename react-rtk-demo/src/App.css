@@ -1,8 +1,13 @@
+body {
+  place-items: normal !important;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  width: 100%;
 }
 
 .logo {
@@ -39,9 +44,24 @@
   justify-content: space-evenly;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
+.btn-primary {
+  margin: 10px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sm-flex-col-12 {
+    display: flex;
+    flex-direction: column;
   }
 }
 
